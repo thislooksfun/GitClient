@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.20" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="octicons.ttf">
+            <string>octicons</string>
+            <string>octicons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="repoCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="repoCell" id="864-MH-X2O" customClass="RepoViewCell" customModule="GitClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="584" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="864-MH-X2O" id="k1C-Ba-fBy">
+                <rect key="frame" x="0.0" y="0.0" width="584" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo name" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-u8-uej">
+                        <rect key="frame" x="35" y="-3" width="471" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="s6a-bC-iCv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrF-gh-z4z">
+                        <rect key="frame" x="561" y="13" width="15" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="1GC-iN-ls5"/>
+                            <constraint firstAttribute="width" constant="15" id="52w-B0-fnV"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="SuB-6h-Po9"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="veS-Sb-tsH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="octicons" family="octicons" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjy-sy-FF8">
+                        <rect key="frame" x="8" y="13" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="AP6-zx-feL"/>
+                            <constraint firstAttribute="height" constant="17" id="vaL-cF-zJA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="octicons" family="octicons" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="888,888" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCu-K1-6uO">
+                        <rect key="frame" x="514" y="11" width="45" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Hfa-jP-7t7"/>
+                            <constraint firstAttribute="width" constant="45" id="QGx-Qd-0Vi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="Mjy-sy-FF8" secondAttribute="centerY" id="7UI-im-Ig7"/>
+                    <constraint firstItem="FYW-u8-uej" firstAttribute="leading" secondItem="Mjy-sy-FF8" secondAttribute="trailing" constant="10" id="EsP-PI-MK1"/>
+                    <constraint firstItem="CCu-K1-6uO" firstAttribute="leading" secondItem="FYW-u8-uej" secondAttribute="trailing" constant="8" id="TrO-i6-Zc9"/>
+                    <constraint firstItem="FYW-u8-uej" firstAttribute="leading" secondItem="Mjy-sy-FF8" secondAttribute="trailing" constant="10" id="U3h-Cd-yWa"/>
+                    <constraint firstItem="Mjy-sy-FF8" firstAttribute="leading" secondItem="k1C-Ba-fBy" secondAttribute="leadingMargin" id="WIb-Gl-H1n"/>
+                    <constraint firstItem="mrF-gh-z4z" firstAttribute="trailing" secondItem="k1C-Ba-fBy" secondAttribute="trailingMargin" id="Wyr-6f-Pjt"/>
+                    <constraint firstAttribute="centerY" secondItem="mrF-gh-z4z" secondAttribute="centerY" id="gE3-u6-S7I"/>
+                    <constraint firstItem="mrF-gh-z4z" firstAttribute="leading" secondItem="CCu-K1-6uO" secondAttribute="trailing" constant="2" id="lQZ-9V-bQM"/>
+                    <constraint firstAttribute="centerY" secondItem="FYW-u8-uej" secondAttribute="centerY" id="rD2-TB-0A2"/>
+                    <constraint firstAttribute="centerY" secondItem="CCu-K1-6uO" secondAttribute="centerY" id="vuI-lF-UrJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="repoName" destination="FYW-u8-uej" id="Mdl-ZF-zv9"/>
+                <outlet property="repoType" destination="Mjy-sy-FF8" id="b3A-wg-35s"/>
+                <outlet property="starCount" destination="CCu-K1-6uO" id="d0G-1i-chS"/>
+            </connections>
+            <point key="canvasLocation" x="545" y="325"/>
+        </tableViewCell>
+    </objects>
+</document>
